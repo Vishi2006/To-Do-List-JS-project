@@ -1,4 +1,5 @@
 A simple, user-friendly To-Do List application built with HTML, CSS, and JavaScript. This project allows users to manage daily tasks efficiently using straightforward JavaScript logic for core functionality. It features a clean interface with unique additions like a dark mode toggle, task prioritization, and local storage for persistent data.
+
 Uniqueness :-
 1. Simple JavaScript Logic: Built with minimal, easy-to-understand JavaScript, making it ideal for beginners learning web development.
 2. Dark Mode Toggle: A fully integrated dark mode that applies to all elements (header, task list, buttons, and popups), using custom colors for a cohesive look.
