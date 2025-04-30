@@ -1,4 +1,4 @@
-/* basic logic to build a to do list :- A. add task, B. save task , C. Delete task, D. update task. */
+/* basic logic to build a to do list :- A. add task, B. save task , C. Delete task. */
 /* uniquness :- dark mode toggle , prioritise tasks , saves in local storage . */
 
 let input = document.querySelector("#task-input"); // access the input filed
@@ -115,7 +115,7 @@ button.addEventListener("click", () => {    // adding event listener when button
     input.value = "";                   // now set the input value empty for next task
     localStorage.setItem("tasks", Box.innerHTML);  // save the string of tasks using the name 'tasks' in browser in a key : value format.
 
-    
+    //add event listener on priority selection
     priority.addEventListener("change", () => {
         if (priority.value === "high") {
             task_box.style.borderLeft = "5px solid red";
@@ -156,21 +156,10 @@ button.addEventListener("click", () => {    // adding event listener when button
 
 });
 
-// add event on the toggle button
-// let isdark = false;
-// theme.addEventListener("click", () => {
-//     if (isdark) {
-//         document.body.style.backgroundColor = "rgb(219, 255, 203)"; // Light mode
-//     } else {
-//         document.body.style.backgroundColor = "rgb(255, 99, 99)"; // Dark mode
-//     }
-//     isdark = !isdark;
-// });
+//logic for dark and light theme.
 let isDark = false;
 theme.onclick = () => {
     isDark = !isDark;
     document.body.classList.toggle("dark-mode");
     theme.textContent = isDark ? "Light" : "Dark";
 };
-
-
